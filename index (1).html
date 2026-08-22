@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Material Secuencia VP y CAE | Economía para Ingenieros – ULA</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+    body {
+      font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+      background-color: #f8fafc;
+      color: #1e293b;
+    }
+    .gradient-bg {
+      background: linear-gradient(135deg, #0f172a 0%, #2563eb 100%);
+    }
+    .video-wrapper {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 0.75rem;
+    }
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      border: 0;
+    }
+  </style>
+</head>
+<body class="antialiased">
+
+  <!-- HEADER -->
+  <header class="gradient-bg text-white relative overflow-hidden">
+    <div class="absolute inset-0 opacity-20">
+      <div class="absolute top-0 right-0 w-96 h-96 bg-blue-400 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3"></div>
+      <div class="absolute bottom-0 left-0 w-72 h-72 bg-indigo-500 rounded-full blur-3xl translate-y-1/3 -translate-x-1/4"></div>
+    </div>
+
+    <div class="relative max-w-5xl mx-auto px-5 py-12 md:py-16">
+      <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+        <div>
+          <span class="inline-block bg-amber-400 text-slate-900 text-xs font-bold px-3 py-1 rounded-full mb-4 tracking-wide">
+            PAD ULA V B2026
+          </span>
+          <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight leading-tight mb-2">
+            Valor Presente y<br class="hidden sm:block" /> Costo Anual Equivalente
+          </h1>
+          <p class="text-blue-100 text-sm md:text-base font-medium">
+            Economía para Ingenieros · Escuela de Ingeniería Eléctrica · Universidad de Los Andes
+          </p>
+        </div>
+        <div class="bg-white/10 border border-white/20 backdrop-blur-sm rounded-2xl p-4 max-w-xs">
+          <p class="text-sm text-blue-50 leading-relaxed italic">
+            “Material de apoyo para la secuencia de aprendizaje. Videos, fórmulas, caso práctico y plantilla de cálculo.”
+          </p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="max-w-5xl mx-auto px-5 py-10 md:py-14 space-y-10">
+
+    <!-- VIDEOS -->
+    <section>
+      <div class="flex items-center gap-3 mb-6">
+        <div class="w-10 h-10 rounded-xl bg-blue-100 flex items-center justify-center text-blue-600 text-lg">▶</div>
+        <div>
+          <h2 class="text-xl md:text-2xl font-extrabold text-slate-900 tracking-tight">Videos de apoyo</h2>
+          <p class="text-slate-500 text-sm">Recursos audiovisuales para reforzar los conceptos de la secuencia</p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Video 1 -->
+        <div class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-md transition-shadow">
+          <div class="video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/c_no6DM_DOI"
+              title="Video 1 - Valor Presente"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="p-4">
+            <span class="text-[10px] font-bold uppercase tracking-widest text-blue-600">Video 1</span>
+            <h3 class="font-bold text-slate-800 mt-0.5">Fundamentos de Valor Presente</h3>
+          </div>
+        </div>
+
+        <!-- Video 2 -->
+        <div class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-md transition-shadow">
+          <div class="video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/ulOZVUKEKTg"
+              title="Video 2 - Costo Anual Equivalente"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="p-4">
+            <span class="text-[10px] font-bold uppercase tracking-widest text-blue-600">Video 2</span>
+            <h3 class="font-bold text-slate-800 mt-0.5">Costo Anual Equivalente (CAE)</h3>
+          </div>
+        </div>
+
+        <!-- Video 3 -->
+        <div class="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden hover:shadow-md transition-shadow md:col-span-2 md:max-w-xl md:mx-auto w-full">
+          <div class="video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/EfR3Ybod0g0"
+              title="Video 3 - Comparación de alternativas"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="p-4">
+            <span class="text-[10px] font-bold uppercase tracking-widest text-blue-600">Video 3</span>
+            <h3 class="font-bold text-slate-800 mt-0.5">Comparación de alternativas (VP y CAE)</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ARCHIVOS -->
+    <section>
+      <div class="flex items-center gap-3 mb-6">
+        <div class="w-10 h-10 rounded-xl bg-amber-100 flex items-center justify-center text-amber-600 text-lg">⬇</div>
+        <div>
+          <h2 class="text-xl md:text-2xl font-extrabold text-slate-900 tracking-tight">Materiales descargables</h2>
+          <p class="text-slate-500 text-sm">Caso práctico, fórmulas con diagramas y plantilla de cálculo</p>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <!-- Caso práctico -->
+        <a href="Caso_Practico.pdf" download
+           class="group bg-white rounded-2xl border border-slate-100 shadow-sm p-5 hover:shadow-md hover:border-blue-200 transition-all flex flex-col">
+          <div class="w-12 h-12 rounded-xl bg-red-500 text-white flex items-center justify-center font-bold text-xs mb-4 group-hover:scale-105 transition-transform">
+            PDF
+          </div>
+          <h3 class="font-bold text-slate-800 text-sm leading-snug mb-1">Caso Práctico</h3>
+          <p class="text-xs text-slate-500 leading-relaxed flex-1">
+            Selección de alternativas + rúbrica del profesor + rúbrica de coevaluación
+          </p>
+          <span class="mt-3 text-xs font-semibold text-blue-600 group-hover:underline">Descargar →</span>
+        </a>
+
+        <!-- Fórmulas -->
+        <a href="Formulas_VP_y_CAE.pdf" download
+           class="group bg-white rounded-2xl border border-slate-100 shadow-sm p-5 hover:shadow-md hover:border-blue-200 transition-all flex flex-col">
+          <div class="w-12 h-12 rounded-xl bg-red-500 text-white flex items-center justify-center font-bold text-xs mb-4 group-hover:scale-105 transition-transform">
+            PDF
+          </div>
+          <h3 class="font-bold text-slate-800 text-sm leading-snug mb-1">Fórmulas VP y CAE</h3>
+          <p class="text-xs text-slate-500 leading-relaxed flex-1">
+            Factores, fórmulas, diagramas de flujo de dinero y ejemplo resuelto (1 página)
+          </p>
+          <span class="mt-3 text-xs font-semibold text-blue-600 group-hover:underline">Descargar →</span>
+        </a>
+
+        <!-- Plantilla Excel -->
+        <a href="Plantilla_VP_y_CAE.xlsx" download
+           class="group bg-white rounded-2xl border border-slate-100 shadow-sm p-5 hover:shadow-md hover:border-emerald-200 transition-all flex flex-col">
+          <div class="w-12 h-12 rounded-xl bg-emerald-600 text-white flex items-center justify-center font-bold text-xs mb-4 group-hover:scale-105 transition-transform">
+            XLSX
+          </div>
+          <h3 class="font-bold text-slate-800 text-sm leading-snug mb-1">Plantilla Excel</h3>
+          <p class="text-xs text-slate-500 leading-relaxed flex-1">
+            Cálculo automático de VP y CAE · Hojas para vidas iguales y desiguales
+          </p>
+          <span class="mt-3 text-xs font-semibold text-emerald-600 group-hover:underline">Descargar →</span>
+        </a>
+      </div>
+
+      <!-- Nota -->
+      <div class="mt-5 bg-amber-50 border border-amber-200 rounded-xl px-4 py-3 flex gap-3 items-start">
+        <span class="text-amber-500 text-lg leading-none mt-0.5">💡</span>
+        <p class="text-sm text-amber-900 leading-relaxed">
+          <strong>Recomendación de uso:</strong> Mira primero los videos, luego descarga el PDF de fórmulas y el caso práctico. Resuelve a mano y verifica tus cálculos con la plantilla Excel.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTEXTO BREVE -->
+    <section class="bg-slate-900 rounded-2xl p-6 md:p-8 text-white">
+      <h2 class="text-lg font-bold mb-2">Sobre esta secuencia</h2>
+      <p class="text-slate-300 text-sm leading-relaxed mb-4">
+        Esta secuencia de una clase trabaja el análisis de alternativas de inversión mediante 
+        <strong class="text-white">Valor Presente (VP)</strong> y 
+        <strong class="text-white">Costo Anual Equivalente (CAE)</strong>, 
+        con énfasis en la visibilización del razonamiento, el trabajo colaborativo y la toma de decisiones fundamentada.
+      </p>
+      <div class="flex flex-wrap gap-2">
+        <span class="bg-blue-500/20 text-blue-300 text-[11px] font-medium px-3 py-1 rounded-full">Unidad 2</span>
+        <span class="bg-blue-500/20 text-blue-300 text-[11px] font-medium px-3 py-1 rounded-full">Análisis de Alternativas</span>
+        <span class="bg-amber-500/20 text-amber-300 text-[11px] font-medium px-3 py-1 rounded-full">Enfoque Neurodidáctico</span>
+        <span class="bg-emerald-500/20 text-emerald-300 text-[11px] font-medium px-3 py-1 rounded-full">DUA</span>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-slate-200 bg-white">
+    <div class="max-w-5xl mx-auto px-5 py-6 flex flex-col sm:flex-row justify-between items-center gap-3 text-sm text-slate-500">
+      <p>José Maldonado · Economía para Ingenieros · ULA</p>
+      <a href="https://jmmaldonadot.github.io/Ruta-de-Aprendizaje/" 
+         class="text-blue-600 hover:text-blue-800 font-medium transition-colors">
+        ← Volver a la Ruta de Aprendizaje
+      </a>
+    </div>
+  </footer>
+
+</body>
+</html>
